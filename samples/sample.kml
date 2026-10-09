@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Sample survey</name>
+
+    <Placemark>
+      <name>Parcel A</name>
+      <description>0.01 x 0.01 degree square, roughly 1.09 km2</description>
+      <ExtendedData><Data name="owner"><value>Survey Dept</value></Data></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>
+        77.000,28.000,0 77.000,28.010,0 77.010,28.010,0 77.010,28.000,0 77.000,28.000,0
+      </coordinates></LinearRing></outerBoundaryIs></Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Parcel B (with a hole)</name>
+      <Polygon>
+        <outerBoundaryIs><LinearRing><coordinates>
+          77.020,28.000 77.020,28.010 77.030,28.010 77.030,28.000 77.020,28.000
+        </coordinates></LinearRing></outerBoundaryIs>
+        <innerBoundaryIs><LinearRing><coordinates>
+          77.023,28.003 77.023,28.007 77.027,28.007 77.027,28.003 77.023,28.003
+        </coordinates></LinearRing></innerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Road 1</name>
+      <LineString><coordinates>77.000,28.000 77.000,28.010</coordinates></LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Well 1</name>
+      <Point><coordinates>77.005,28.005,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mixed geometry (point + line)</name>
+      <MultiGeometry>
+        <Point><coordinates>77.040,28.000</coordinates></Point>
+        <LineString><coordinates>77.040,28.000 77.045,28.005</coordinates></LineString>
+      </MultiGeometry>
+    </Placemark>
+
+    <Placemark>
+      <name>Label only (no geometry)</name>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Accuracy test</name>
+
+    <Placemark><name>0 Buenos Aires (southern hemisphere)</name>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>
+        -58.40,-34.61 -58.40,-34.60 -58.39,-34.60 -58.39,-34.61 -58.40,-34.61
+      </coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+
+    <Placemark><name>1 London (western longitude)</name>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>
+        -0.10,51.50 -0.10,51.51 -0.09,51.51 -0.09,51.50 -0.10,51.50
+      </coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+
+    <Placemark><name>2 Sydney (southern hemisphere, east)</name>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>
+        151.20,-33.87 151.20,-33.86 151.21,-33.86 151.21,-33.87 151.20,-33.87
+      </coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+
+    <Placemark><name>3 Tromso (high latitude)</name>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>
+        18.95,69.65 18.95,69.66 18.96,69.66 18.96,69.65 18.95,69.65
+      </coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+
+    <Placemark><name>4 Straddles UTM zone boundary at 72E</name>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>
+        71.99,28.00 71.99,28.01 72.01,28.01 72.01,28.00 71.99,28.00
+      </coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+
+    <Placemark><name>5 London north-south line</name>
+      <LineString><coordinates>-0.10,51.50 -0.10,51.51</coordinates></LineString></Placemark>
+
+    <Placemark><name>6 BIG box spanning two UTM zones (known limitation)</name>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>
+        66,20 66,24 78,24 78,20 66,20
+      </coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+  </Document>
+</kml>
